@@ -10,7 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import {cosineSimilarity} from '@/lib/similarity';
+import { computeCosineSimilarity } from '@/lib/similarity';
 
 const CompareTwoTextsInputSchema = z.object({
   text1: z.string().describe('The first text to compare.'),
@@ -53,7 +53,7 @@ const compareTwoTextsFlow = ai.defineFlow(
     outputSchema: CompareTwoTextsOutputSchema,
   },
   async input => {
-    const similarityScore = cosineSimilarity(input.text1, input.text2);
+    const similarityScore = computeCosineSimilarity(input.text1, input.text2);
     
     // The prompt will identify matched phrases. Here we just call the prompt.
     const {output} = await prompt(input);
