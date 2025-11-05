@@ -15,16 +15,22 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Plagiarism Detective: Free Plagiarism Checker Online",
+  title: "Free Plagiarism Checker - Plagiarism Detective",
   description:
-    "A free plagiarism checker and text similarity tool. Compare texts, upload files (PDF, DOCX, TXT), and get detailed similarity reports to ensure originality.",
+    "Ensure originality with our free plagiarism checker. Compare text, check documents, and get detailed similarity reports. Ideal for students, writers, and educators.",
   keywords: [
-    "Plagiarism Checker",
-    "Similarity Checker",
-    "Free Plagiarism Tool",
-    "Text Similarity",
-    "Online Plagiarism Check",
-    "Duplicate Content Finder",
+    "plagiarism checker",
+    "similarity checker",
+    "free plagiarism tool",
+    "text similarity",
+    "online plagiarism check",
+    "duplicate content finder",
+    "check for plagiarism",
+    "originality checker",
+    "content originality",
+    "academic integrity",
+    "writing tool",
+    "SEO content tool"
   ],
 };
 
