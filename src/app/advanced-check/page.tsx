@@ -28,7 +28,7 @@ import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { useHistory } from "@/hooks/use-history";
 import { advancedPlagiarismCheck } from "@/ai/flows/advanced-plagiarism-check";
-import type { AdvancedPlagiarismCheckOutput } from "@/ai/flows/advanced-plagiarism-check";
+import type { AdvancedPlagiarismCheckOutput } from "@/ai/flows/advanced-plagiarism-check-types";
 import { CircularProgress } from "@/components/circular-progress";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
