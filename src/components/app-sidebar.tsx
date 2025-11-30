@@ -21,6 +21,10 @@ import {
   History,
   Trash2,
   Sparkles,
+  Info,
+  Mail,
+  ShieldCheck,
+  FileText,
 } from "lucide-react";
 import { Logo } from "./logo";
 import { useHistory } from "@/hooks/use-history";
@@ -49,6 +53,13 @@ const menuItems = [
     icon: Sparkles,
   },
 ];
+
+const infoMenuItems = [
+    { href: '/about', label: 'About Us', icon: Info },
+    { href: '/contact', label: 'Contact Us', icon: Mail },
+    { href: '/privacy', label: 'Privacy Policy', icon: ShieldCheck },
+    { href: '/terms', label: 'Terms & Conditions', icon: FileText },
+]
 
 export function AppSidebar() {
   const pathname = usePathname();
@@ -113,7 +124,24 @@ export function AppSidebar() {
 
       </SidebarContent>
       <SidebarFooter>
-        {/* Footer content if any */}
+        <SidebarSeparator />
+        <SidebarGroup>
+            <SidebarMenu>
+                {infoMenuItems.map((item) => (
+                <SidebarMenuItem key={item.href}>
+                    <Link href={item.href} className="w-full">
+                    <SidebarMenuButton
+                        isActive={pathname === item.href}
+                        tooltip={item.label}
+                    >
+                        <item.icon />
+                        <span>{item.label}</span>
+                    </SidebarMenuButton>
+                    </Link>
+                </SidebarMenuItem>
+                ))}
+            </SidebarMenu>
+        </SidebarGroup>
       </SidebarFooter>
     </Sidebar>
   );
