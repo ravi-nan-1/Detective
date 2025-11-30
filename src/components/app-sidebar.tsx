@@ -20,6 +20,7 @@ import {
   DatabaseZap,
   History,
   Trash2,
+  Sparkles,
 } from "lucide-react";
 import { Logo } from "./logo";
 import { useHistory } from "@/hooks/use-history";
@@ -41,6 +42,11 @@ const menuItems = [
     href: "/contextual-analysis",
     label: "AI Contextual Analysis",
     icon: DatabaseZap,
+  },
+  {
+    href: "/advanced-check",
+    label: "Advanced Check",
+    icon: Sparkles,
   },
 ];
 
