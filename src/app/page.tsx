@@ -4,7 +4,7 @@ import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Loader2 } from "lucide-react";
+import { Loader2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -23,6 +23,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useHistory } from "@/hooks/use-history";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 const formSchema = z.object({
   text1: z.string().min(50, {
@@ -204,6 +205,36 @@ export default function TextComparisonPage() {
                     ))}
                 </div>
             </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Related Tools</CardTitle>
+            <CardDescription>To improve productivity, try our other free tools:</CardDescription>
+          </CardHeader>
+          <CardContent className="grid gap-6 md:grid-cols-3">
+            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
+              <h3 className="font-semibold">PDF Splitter</h3>
+              <p className="text-sm text-muted-foreground mt-1">Split your PDF files into multiple documents.</p>
+              <Link href="https://pdf2word.all2ools.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
+                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
+              <h3 className="font-semibold">Image Compressor</h3>
+              <p className="text-sm text-muted-foreground mt-1">Reduce image file sizes for free.</p>
+               <Link href="#" className="text-sm text-primary hover:underline mt-2 inline-flex items-center pointer-events-none text-muted-foreground">
+                Coming Soon
+              </Link>
+            </div>
+            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
+              <h3 className="font-semibold">More PDF Tools</h3>
+              <p className="text-sm text-muted-foreground mt-1">Explore our full suite of online tools.</p>
+              <Link href="#" className="text-sm text-primary hover:underline mt-2 inline-flex items-center pointer-events-none text-muted-foreground">
+                Coming Soon
+              </Link>
+            </div>
+          </CardContent>
         </Card>
 
         <div className="grid md:grid-cols-2 gap-8">
