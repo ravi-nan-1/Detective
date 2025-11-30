@@ -33,6 +33,11 @@ export const AdvancedPlagiarismCheckOutputSchema = z.object({
     plagiarism: z.number().describe('Total plagiarism percentage.'),
     originality: z.number().describe('Unique content score.'),
     paraphrasing: z.string().describe('Paraphrasing score (e.g., Medium).'),
+    sentenceOriginality: z.object({
+        original: z.number().describe('Count of original sentences.'),
+        possiblyPlagiarized: z.number().describe('Count of possibly plagiarized sentences.'),
+        likelyPlagiarized: z.number().describe('Count of likely plagiarized sentences.'),
+    }).describe('Breakdown of sentence originality counts.'),
     readabilityScore: z.string().describe('The readability score of the text (e.g., "High School Level").'),
     fixRecommendations: z.string().describe('Recommendations to fix the plagiarism issues.'),
   }),

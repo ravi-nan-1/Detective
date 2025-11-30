@@ -120,7 +120,18 @@ export default function AdvancedCheckPage() {
                       <FormLabel>Text to Analyze</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Paste the text to analyze here..."
+                          placeholder="Analyze the following text for plagiarism.
+
+Provide:
+- Overall plagiarism percentage
+- Sentence-by-sentence originality
+- Highlight plagiarized sections
+- Reason for each similarity
+- Suggest original rewrites
+- Final plagiarism report
+
+Text:
+{PASTE YOUR TEXT HERE}"
                           className="min-h-[250px] resize-y"
                           {...field}
                         />
@@ -165,6 +176,28 @@ export default function AdvancedCheckPage() {
                         <span className="font-medium">Readability Score</span>
                         <Badge variant="secondary">{result.finalReport.readabilityScore}</Badge>
                     </div>
+                     {result.finalReport.sentenceOriginality && (
+                      <>
+                        <Separator />
+                        <div className="space-y-2">
+                           <span className="font-medium">Sentence Originality</span>
+                            <div className="flex justify-around text-center">
+                                <div>
+                                    <p className="text-2xl font-bold">{result.finalReport.sentenceOriginality.original}</p>
+                                    <p className="text-xs text-muted-foreground">Original</p>
+                                </div>
+                                 <div>
+                                    <p className="text-2xl font-bold">{result.finalReport.sentenceOriginality.possiblyPlagiarized}</p>
+                                    <p className="text-xs text-muted-foreground">Possibly Plagiarized</p>
+                                </div>
+                                 <div>
+                                    <p className="text-2xl font-bold">{result.finalReport.sentenceOriginality.likelyPlagiarized}</p>
+                                    <p className="text-xs text-muted-foreground">Likely Plagiarized</p>
+                                </div>
+                            </div>
+                        </div>
+                      </>
+                    )}
                     <Separator />
                      <div className="space-y-2">
                          <span className="font-medium">Recommendations</span>
