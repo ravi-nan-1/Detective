@@ -223,15 +223,15 @@ export default function TextComparisonPage() {
             <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">Image Compressor</h3>
               <p className="text-sm text-muted-foreground mt-1">Reduce image file sizes for free.</p>
-               <Link href="#" className="text-sm text-primary hover:underline mt-2 inline-flex items-center pointer-events-none text-muted-foreground">
-                Coming Soon
+               <Link href="https://imagecompressor-beta.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
+                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
             <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">More PDF Tools</h3>
               <p className="text-sm text-muted-foreground mt-1">Explore our full suite of online tools.</p>
-              <Link href="#" className="text-sm text-primary hover:underline mt-2 inline-flex items-center pointer-events-none text-muted-foreground">
-                Coming Soon
+              <Link href="https://all2ools.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
+                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
           </CardContent>
