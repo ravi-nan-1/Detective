@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Privacy Policy",
-    description: "Read the Privacy Policy for ALL2ools.com. We are committed to protecting your data and privacy while you use our AI plagiarism checker.",
+    description: "Read our privacy practices to understand how we safely handle text and user data.",
 };
 
 export default function PrivacyPage() {

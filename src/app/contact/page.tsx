@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Contact Us – We’re Here to Help",
-    description: "Contact ALL2ools.com for support, business inquiries, or feedback. We are here to help with our AI plagiarism checker tool.",
+    description: "Get support or business inquiries handled quickly. Contact our plagiarism detection team today.",
 };
 
 export default function ContactPage() {

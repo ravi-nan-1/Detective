@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Terms and Conditions",
-    description: "Read the Terms and Conditions for using ALL2ools.com. Understand your rights and responsibilities when using our AI plagiarism checker.",
+    description: "Review the terms and conditions governing your use of our plagiarism detection tool.",
 };
 
 export default function TermsPage() {

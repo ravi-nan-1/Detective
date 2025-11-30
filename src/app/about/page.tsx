@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "About Us – AI Plagiarism Checker Tool",
-    description: "Learn about ALL2ools.com, our mission to provide an accurate and accessible AI-driven plagiarism detection tool for students, writers, and professionals.",
+    description: "Learn about our AI-powered plagiarism checker designed to provide accurate, fast, and user-friendly originality reports.",
 };
 
 export default function AboutPage() {

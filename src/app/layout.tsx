@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "AI Plagiarism Checker | Free & Accurate | ALL2ools.com",
   description:
-    "Check for plagiarism with our free AI-powered tool. Get instant, accurate results for text, documents, and websites. Perfect for students, writers, and educators.",
+    "Check plagiarism instantly with our advanced AI plagiarism checker. Detect copied, paraphrased, and AI-generated content with sentence-by-sentence analysis and rewrite suggestions.",
   keywords: [
     "plagiarism checker",
     "ai plagiarism checker",
@@ -32,7 +32,14 @@ export const metadata: Metadata = {
     "seo content tool",
     "plagiarism detector",
     "duplicate content checker",
-    "copy content checker"
+    "copy content checker",
+    "plagiarism checker online",
+    "free plagiarism detector",
+    "plagiarism remover tool",
+    "rewrite plagiarized content",
+    "grammar and plagiarism checker",
+    "academic plagiarism tool",
+    "ai content originality analysis"
   ],
 };
 
@@ -41,8 +48,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ALL2ools.com",
+    "url": "https://all2ools.com",
+    "logo": "https://all2ools.com/logo.png",
+    "description": "AI-powered plagiarism checker with sentence-level analysis, rewrite suggestions, and originality scoring.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@all2ools.com",
+      "contactType": "customer support"
+    }
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-body antialiased",
