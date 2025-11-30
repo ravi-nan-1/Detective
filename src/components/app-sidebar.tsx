@@ -124,24 +124,7 @@ export function AppSidebar() {
 
       </SidebarContent>
       <SidebarFooter>
-        <SidebarSeparator />
-        <SidebarGroup>
-            <SidebarMenu>
-                {infoMenuItems.map((item) => (
-                <SidebarMenuItem key={item.href}>
-                    <Link href={item.href} className="w-full">
-                    <SidebarMenuButton
-                        isActive={pathname === item.href}
-                        tooltip={item.label}
-                    >
-                        <item.icon />
-                        <span>{item.label}</span>
-                    </SidebarMenuButton>
-                    </Link>
-                </SidebarMenuItem>
-                ))}
-            </SidebarMenu>
-        </SidebarGroup>
+        
       </SidebarFooter>
     </Sidebar>
   );

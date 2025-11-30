@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppHeader } from "@/components/app-header";
 import { AppSidebar } from "@/components/app-sidebar";
+import { AppFooter } from "@/components/app-footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({
@@ -15,22 +16,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Free Plagiarism Checker - Plagiarism Detective",
+  title: "AI Plagiarism Checker | Free & Accurate | ALL2ools.com",
   description:
-    "Ensure originality with our free plagiarism checker. Compare text, check documents, and get detailed similarity reports. Ideal for students, writers, and educators.",
+    "Check for plagiarism with our free AI-powered tool. Get instant, accurate results for text, documents, and websites. Perfect for students, writers, and educators.",
   keywords: [
     "plagiarism checker",
+    "ai plagiarism checker",
+    "free plagiarism checker",
     "similarity checker",
-    "free plagiarism tool",
-    "text similarity",
-    "online plagiarism check",
-    "duplicate content finder",
     "check for plagiarism",
     "originality checker",
     "content originality",
     "academic integrity",
     "writing tool",
-    "SEO content tool"
+    "seo content tool",
+    "plagiarism detector",
+    "duplicate content checker",
+    "copy content checker"
   ],
 };
 
@@ -61,6 +63,7 @@ export default function RootLayout({
                 <AppSidebar />
                 <main className="flex w-full flex-1 flex-col overflow-y-auto">
                   {children}
+                  <AppFooter />
                 </main>
               </div>
             </div>
