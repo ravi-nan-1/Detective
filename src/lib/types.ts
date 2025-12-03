@@ -13,7 +13,7 @@ export interface ContextualAnalysisResult {
 
 export type HistoryItem = {
   id: string;
-  type: "text" | "file" | "contextual" | "advanced";
+  type: "text" | "file" | "contextual" | "advanced" | "grammar";
   date: string;
   input: any;
   result: any; // AnalysisResult | ContextualAnalysisResult - Relaxing for simplicity in local storage

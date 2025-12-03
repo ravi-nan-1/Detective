@@ -25,6 +25,7 @@ import {
   Mail,
   ShieldCheck,
   FileText,
+  CheckCircle,
 } from "lucide-react";
 import { Logo } from "./logo";
 import { useHistory } from "@/hooks/use-history";
@@ -51,6 +52,11 @@ const menuItems = [
     href: "/advanced-check",
     label: "Advanced Check",
     icon: Sparkles,
+  },
+  {
+    href: "/grammar-check",
+    label: "Grammar Check",
+    icon: CheckCircle,
   },
 ];
 

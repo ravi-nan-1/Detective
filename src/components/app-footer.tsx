@@ -9,6 +9,7 @@ const footerLinks = [
       { href: "/file-check", label: "File vs. Text" },
       { href: "/contextual-analysis", label: "AI Contextual Analysis" },
       { href: "/advanced-check", label: "Advanced Check" },
+      { href: "/grammar-check", label: "Grammar Check" },
     ],
   },
   {
