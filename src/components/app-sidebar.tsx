@@ -39,14 +39,14 @@ const menuItems = [
     icon: ScanText,
   },
   {
-    href: "/file-check",
-    label: "File vs. Text",
-    icon: FileScan,
-  },
-  {
     href: "/contextual-analysis",
     label: "AI Contextual Analysis",
     icon: DatabaseZap,
+  },
+  {
+    href: "/file-check",
+    label: "File vs. Text",
+    icon: FileScan,
   },
   {
     href: "/advanced-check",

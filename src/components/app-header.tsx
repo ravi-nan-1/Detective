@@ -7,8 +7,8 @@ import { Button } from "./ui/button";
 
 const navLinks = [
   { href: "/", label: "Text vs. Text" },
-  { href: "/file-check", label: "File vs. Text" },
   { href: "/contextual-analysis", label: "AI Contextual Analysis" },
+  { href: "/file-check", label: "File vs. Text" },
   { href: "/advanced-check", label: "Advanced Check" },
   { href: "/grammar-check", label: "Grammar Check" },
 ];
