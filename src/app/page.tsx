@@ -94,32 +94,32 @@ export default function TextComparisonPage() {
       {
         title: "Image Compressor",
         description: "Reduce image size instantly while maintaining high quality. Perfect for websites, e-commerce, and social media. Fast, lossless, and works with all major formats.",
-        link: "https://imagecompressor-beta.vercel.app/",
+        link: "https://www.all2ools.com/tools/image-compressor",
       },
       {
         title: "PDF to Word Converter",
         description: "Convert any PDF into an editable Word file with accurate formatting, preserved layout, and clean text extraction. Fast, reliable, and completely free.",
-        link: "https://pdf2word.all2ools.com",
+        link: "https://www.all2ools.com/tools/image-compressor",
       },
       {
         title: "1-Click Article Outline Generator",
         description: "Generate SEO-optimized article outlines in seconds. Creates headings, subtopics, talking points, and FAQs — perfect for bloggers, marketers, and content creators.",
-        link: "https://all2ools.com",
+        link: "https://www.all2ools.com/tools/1-click-article-outline-generator",
       },
       {
         title: "API Latency Checker",
         description: "Test API response time from multiple global regions. Diagnose slow endpoints, compare server performance, and measure real-world latency instantly.",
-        link: "https://all2ools.com",
+        link: "https://www.all2ools.com/tools/api-latency-checker",
       },
       {
         title: "AI Regex Generator",
         description: "Turn plain English instructions into working Regular Expressions. Includes pattern explanation, validation, and testing — ideal for developers and QA teams.",
-        link: "https://all2ools.com",
+        link: "https://www.all2ools.com/tools/api-latency-checker",
       },
       {
         title: "JSON Hero: Converter & Formatter",
         description: "Convert JSON to Excel or CSV, format complex structures, and clean nested data with one click. Great for developers, analysts, and API debugging.",
-        link: "https://all2ools.com",
+        link: "https://www.all2ools.com/tools/api-latency-checker",
       },
   ];
 
