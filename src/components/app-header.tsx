@@ -2,8 +2,8 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+import { ArrowLeft } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Text vs. Text" },
@@ -35,6 +35,12 @@ export function AppHeader() {
       </nav>
 
       <div className="ml-auto flex items-center gap-2">
+        <Button asChild variant="outline">
+          <a href="https://www.all2ools.com/" target="_blank" rel="noopener noreferrer">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to ALL2ools
+          </a>
+        </Button>
         <ThemeToggle />
       </div>
     </header>
