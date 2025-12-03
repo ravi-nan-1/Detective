@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
@@ -8,6 +9,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppHeader } from "@/components/app-header";
 import { AppSidebar } from "@/components/app-sidebar";
 import { AppFooter } from "@/components/app-footer";
+import { RelatedTools } from "@/components/related-tools";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({
@@ -90,6 +92,7 @@ export default function RootLayout({
                 <AppSidebar />
                 <main className="flex w-full flex-1 flex-col overflow-y-auto">
                   {children}
+                  <RelatedTools />
                   <AppFooter />
                 </main>
               </div>
