@@ -89,6 +89,39 @@ export default function TextComparisonPage() {
     "Fast and user-friendly",
     "Supports all writing formats"
     ];
+    
+  const relatedTools = [
+      {
+        title: "Image Compressor",
+        description: "Reduce image size instantly while maintaining high quality. Perfect for websites, e-commerce, and social media. Fast, lossless, and works with all major formats.",
+        link: "https://imagecompressor-beta.vercel.app/",
+      },
+      {
+        title: "PDF to Word Converter",
+        description: "Convert any PDF into an editable Word file with accurate formatting, preserved layout, and clean text extraction. Fast, reliable, and completely free.",
+        link: "https://pdf2word.all2ools.com",
+      },
+      {
+        title: "1-Click Article Outline Generator",
+        description: "Generate SEO-optimized article outlines in seconds. Creates headings, subtopics, talking points, and FAQs — perfect for bloggers, marketers, and content creators.",
+        link: "https://all2ools.com",
+      },
+      {
+        title: "API Latency Checker",
+        description: "Test API response time from multiple global regions. Diagnose slow endpoints, compare server performance, and measure real-world latency instantly.",
+        link: "https://all2ools.com",
+      },
+      {
+        title: "AI Regex Generator",
+        description: "Turn plain English instructions into working Regular Expressions. Includes pattern explanation, validation, and testing — ideal for developers and QA teams.",
+        link: "https://all2ools.com",
+      },
+      {
+        title: "JSON Hero: Converter & Formatter",
+        description: "Convert JSON to Excel or CSV, format complex structures, and clean nested data with one click. Great for developers, analysts, and API debugging.",
+        link: "https://all2ools.com",
+      },
+  ];
 
   return (
     <div className="flex-1 space-y-8 p-4 md:p-8 pt-6">
@@ -212,28 +245,16 @@ export default function TextComparisonPage() {
             <CardTitle>Related Tools</CardTitle>
             <CardDescription>To improve productivity, try our other free tools:</CardDescription>
           </CardHeader>
-          <CardContent className="grid gap-6 md:grid-cols-3">
-            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="font-semibold">PDF Splitter</h3>
-              <p className="text-sm text-muted-foreground mt-1">Split your PDF files into multiple documents.</p>
-              <Link href="https://pdf2word.all2ools.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
-                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="font-semibold">Image Compressor</h3>
-              <p className="text-sm text-muted-foreground mt-1">Reduce image file sizes for free.</p>
-               <Link href="https://imagecompressor-beta.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
-                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-            <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
-              <h3 className="font-semibold">More PDF Tools</h3>
-              <p className="text-sm text-muted-foreground mt-1">Explore our full suite of online tools.</p>
-              <Link href="https://all2ools.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
-                Visit Tool <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
+          <CardContent className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+             {relatedTools.map((tool) => (
+                <div key={tool.title} className="flex flex-col p-4 border rounded-lg hover:shadow-md transition-shadow">
+                    <h3 className="font-semibold">{tool.title}</h3>
+                    <p className="text-sm text-muted-foreground mt-1 flex-1">{tool.description}</p>
+                    <Link href={tool.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline mt-2 inline-flex items-center">
+                        Use Tool <ArrowRight className="w-4 h-4 ml-1" />
+                    </Link>
+                </div>
+             ))}
           </CardContent>
         </Card>
 
@@ -309,3 +330,5 @@ export default function TextComparisonPage() {
     </div>
   );
 }
+
+    
