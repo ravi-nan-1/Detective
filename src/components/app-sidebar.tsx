@@ -26,6 +26,7 @@ import {
   ShieldCheck,
   FileText,
   CheckCircle,
+  Minimize2,
 } from "lucide-react";
 import { Logo } from "./logo";
 import { useHistory } from "@/hooks/use-history";
@@ -57,6 +58,11 @@ const menuItems = [
     href: "/grammar-check",
     label: "Grammar Check",
     icon: CheckCircle,
+  },
+  {
+    href: "/text-summarizer",
+    label: "Text Summarizer",
+    icon: Minimize2,
   },
 ];
 

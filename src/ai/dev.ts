@@ -7,3 +7,4 @@ import '@/ai/flows/compare-two-texts.ts';
 import '@/ai/flows/ai-powered-contextual-analysis.ts';
 import '@/ai/flows/advanced-plagiarism-check.ts';
 import '@/ai/flows/grammar-check.ts';
+import '@/ai/flows/text-summarizer.ts';
