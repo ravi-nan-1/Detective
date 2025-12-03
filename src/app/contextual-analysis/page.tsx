@@ -93,15 +93,15 @@ export default function ContextualAnalysisPage() {
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <h1 className="text-3xl font-bold tracking-tight font-headline">
-          AI-Powered Contextual Analysis
+          AI Contextual Analysis
         </h1>
       </div>
       <div className="grid gap-8">
         <Card>
           <CardHeader>
-            <CardTitle>Check Against Reference Database</CardTitle>
+            <CardTitle>Check Against a Reference Database</CardTitle>
             <CardDescription>
-                Our AI will analyze the context of your text and compare it against a simulated database of documents to find conceptual similarities, not just word-for-word matches.
+                Our AI will analyze your text for conceptual similarities—not just word-for-word matches—by comparing it against a simulated database of documents. This mimics how modern plagiarism detectors check against web pages and academic papers.
             </CardDescription>
           </CardHeader>
           <CardContent>
